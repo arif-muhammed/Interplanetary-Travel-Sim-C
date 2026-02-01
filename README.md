@@ -1,56 +1,66 @@
-🚀 Interplanetary Travel Simulation
+🚀 Interplanetary Travel Simulation (C - MinGW)
 
 📌 Overview
 
-This project is a Java console application (Eclipse project) that simulates people traveling between planets using spacecrafts.
-The program reads passenger information from a file (Kisiler.txt) and tracks their remaining lifetime (in hours).
-If a person's lifetime reaches zero, they are considered deceased and excluded from the population count.
+This project is a C console application (compiled with MinGW) that simulates people traveling between planets using spacecraft. The program reads passenger information from a file (Kisiler.txt) and tracks their remaining lifetime in hours. If a person's lifetime reaches zero, they are considered deceased and excluded from the population count.
 
+While traveling, lifetime decreases normally.
+
+On planets, aging rate depends on planet type (defined in assignment).
 
 🚀 Features
 
 Read passenger data from Kisiler.txt.
 
-Simulate interplanetary travel between planets using spacecraft.
+Simulate travel between planets using spacecraft.
 
-Track each passenger’s remaining lifetime (in hours).
+Apply planet-based aging rules (lifetime reduction depends on planet type).
+
+Track each passenger’s remaining lifetime.
 
 Exclude deceased passengers (when lifetime = 0).
 
-Display current population count after each simulation step.
+Display updated population after each simulation step.
 
 ⚙️ Requirements
 
-Java 8 or higher
+MinGW Compiler (for Windows)
 
-Eclipse IDE (for development & running)
+Standard C language (ANSI C)
 
-🖥️ Usage
+Console application environment
+
+🖥️ Compilation & Usage
 
 Place the Kisiler.txt file in the project directory.
 
-Run the program from Eclipse (or terminal with java).
+Compile the program using MinGW:
+
+gcc main.c -o interplanetary.exe
+
+Run the executable:
+
+./interplanetary.exe
 
 The program will:
 
 Load all people from the text file.
 
-Simulate travel between planets.
+Simulate interplanetary travel.
 
-Update remaining life hours.
+Apply planet-based lifetime reduction.
 
 Exclude deceased passengers.
 
-
 🔮 Future Improvements
 
-Add support for multiple spacecrafts with capacity limits.
+Add different spacecrafts with capacity management.
 
-Implement random planet destinations.
+Add random destination assignment.
 
-Save simulation results to an output file.
+Export results to an output file.
 
-Add statistics about survival rates and average lifetime.
+Improve planet rules with configurable aging rates.
 
 📜 License
 
